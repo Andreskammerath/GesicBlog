@@ -3,4 +3,7 @@ from django.http import HttpResponse
 from .models import Post
 # Create your views here.
 def index(request):
-	return HttpResponse("Bienvenido a la lista de Blogs")
+	posts = Post.objects.all().order_by('published_date')
+	return render(request, "blog/listBlog.html", {
+		'posts' : posts
+		})

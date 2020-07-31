@@ -1,0 +1,12 @@
+{% extends "blog/layout.html"%}
+{% block head %} <title>Gesic Blog</title> {% endblock%} 
+{% block body%}
+	<h1>Bienvenidos a Gesic Blog</h1>
+	<h2>Aquí tienes una lista de los posts creados por nuestras profesionales</h2>
+	{% for p in posts%}
+		<div>
+			<h3>{{p.title}}</h3>
+			<h4>autor: {{p.author}}</h4>
+		</div>
+	{% endfor %}
+{% endblock%}
