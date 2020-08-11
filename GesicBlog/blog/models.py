@@ -8,7 +8,6 @@ class Post(models.Model):
     body = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    intro = models.CharField(max_length=200)
     def publish(self):
         self.published_date = timezone.now()
         self.save()

@@ -1,35 +1,47 @@
 {% extends "blog/layout.html"%}
 {% block head %} <title>Gesic Blog</title> {% endblock%} 
 {% block body%}
-	<!-- Image and text -->
-	<nav class="navbar navbar-light bg-light">
-	  <a class="navbar-brand" href="#">
-	    <!--<img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">-->
-	    Gesic
-	  </a>
-	</nav>
-	<h1>Bienvenidos a Gesic Blog</h1>
-	<h2>Aquí tienes una lista de los posts creados por nuestras profesionales</h2>
-	<div class="main-wrapper">
-		<section class="blog-list px-3 py-5 p-md-5">
-			<div class="container">
-				{% for p in posts%}
-					    <div class="item mb-5">
-						    <div class="media">
-						    	{% load static %}
-                              	<img src="{% static 'images/image.jpg' %}" class="mr-3 img-fluid post-thumb d-none d-md-flex" alt="My image">
-							    <!--<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-1.jpg" alt="image">-->
-							    <div class="media-body">
-								    <h3 class="title mb-1"><a href="blog-post.html">{{p.title}}</a></h3>
-								    <div class="meta mb-1"><span class="date">Published 2 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">8 comments</a></span></div>
-								    <div class="intro">{{p.intro}}</div>
-								    <h6>autor: {{p.author}}</h6>
-								    <a class="more-link" href="blog-post.html">Read more &rarr;</a>
-							    </div><!--//media-body-->
-						    </div><!--//media-->
-						</div><!--//item-->
-				{% endfor %}
-			</div><!--//container-->
-		</section>
-	</div>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('../static/img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Gesic Blog</h1>
+            <span class="subheading">Mediacion & Negociación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% for p in posts %}
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              {{p.title}}
+            </h2>
+            <h3 class="post-subtitle">
+              {{p.intro}}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">{{p.author}}</a>
+            on {{p.created_date}}</p>
+        </div>
+        <hr>
+        {% endfor %}
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
 {% endblock%}
