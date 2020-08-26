@@ -133,6 +133,13 @@ USE_TZ = True
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
+EMAIL_HOST_PASSWORD = "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"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 # Extra places for collectstatic to find static files.
 #STATICFILES_DIRS = (
 #    os.path.join(BASE_DIR, 'static'),

@@ -56,13 +56,19 @@
                     <div class="col-md-6 col-sm-12">
                          <div class="about-info">
                               <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
-                                   <h4>Conoce nuestra historia</h4>
-                                   <h2>Estamos en las mediaciones hace más de 30 años</h2>
+                                   <h4>Quienes somos</h4>
+                                   <h2>GESiC - Mediación &amp; Negociación</h2>
                               </div>
 
                               <div class="wow fadeInUp" data-wow-delay="0.4s">
-                                   <p>Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.</p>
-                                   <p>Sed elementum vel felis sed scelerisque. In arcu diam, sollicitudin eu nibh ac, posuere tristique magna. You can use this template for your cafe or restaurant website. Please tell your friends about <a href="#team" target="_parent">Conoce nuestro equipos</a>. Thank you.</p>
+                                   <p>Somos un equipo de Negociadoras y Mediadoras con más de veinte 20 años de trayectoria y experiencia en gestionar Situaciones Conflictivas, acompañando a quienes no pueden solucionar sus conflictos de manera natural y espontánea.</p>
+                                   <p>El equipo está formado por:</p>
+                                   <ul>
+                                        <li>Liliana Elsa Omegna (Mat. 170)</li>
+                                        <li>Silvina Muñoz (Mat. 371)</li>
+                                        <li>María Luisa Retamal Vivián (Mat. 907)</li>
+                                   </ul>
+                                   <p>Con calidez y calidad humana, nos caracterizamos por ser sujetos imparciales, neutrales al conflicto, sirviendo de facilitadores de la comunicación y de la buena negociación, logrando así acercar a las partes con múltiples herramientas.<a href="#team" target="_parent">Conoce nuestro equipos</a></p>
                               </div>
                          </div>
                     </div>
@@ -87,7 +93,7 @@
                     <div class="col-md-12 col-sm-12">
                          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
                               <h2>Conoce nuestras profesionales</h2>
-                              <h4>Son expertas en el rubro &amp; muy apasionadas</h4>
+                              <h4>Expertas en el rubro &amp; muy profesionales</h4>
                          </div>
                     </div>
 
@@ -96,11 +102,11 @@
                               <img src="{% static 'images/luisa.jpg' %}" class="img-responsive" alt="My image">
                                    <div class="team-hover">
                                         <div class="team-item">
-                                             <h4>Lula posee una trayectoria de más de 20 años negociando, además de un gran carisma</h4> 
-                                             <ul class="social-icon">
-                                                  <li><a href="#" class="fa fa-linkedin-square"></a></li>
-                                                  <li><a href="#" class="fa fa-envelope-o"></a></li>
-                                             </ul>
+                                             <h4>Mat. 907</h4> 
+                                             <!--<ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-github"></a></li>
+                                                  <li><a href="#" class="fa fa-google"></a></li>
+                                             </ul>-->
                                         </div>
                                    </div>
                          </div>
@@ -115,11 +121,11 @@
                               <img src="{% static 'images/silvina.jpg' %}" class="img-responsive" alt="My image">
                                    <div class="team-hover">
                                         <div class="team-item">
-                                             <h4>Sil posee una trayectoria de más de 15 años además de mucho sentido del humor</h4>
-                                             <ul class="social-icon">
-                                                  <li><a href="#" class="fa fa-instagram"></a></li>
-                                                  <li><a href="#" class="fa fa-flickr"></a></li>
-                                             </ul>
+                                             <h4>Mat. 371</h4>
+                                             <!--<ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-github"></a></li>
+                                                  <li><a href="#" class="fa fa-google"></a></li>
+                                             </ul>-->
                                         </div>
                                    </div>
                          </div>
@@ -134,11 +140,11 @@
                               <img src="{% static 'images/liliana.jpg' %}" class="img-responsive" alt="My image">
                                    <div class="team-hover">
                                         <div class="team-item">
-                                             <h4>Hace mas de 25 años que se dedica a la resolución de conflictos familiares, además de tener una gran capacidad para escuchar</h4>
-                                             <ul class="social-icon">
+                                             <h4>Mat. 170</h4>
+                                             <!--<ul class="social-icon">
                                                   <li><a href="#" class="fa fa-github"></a></li>
                                                   <li><a href="#" class="fa fa-google"></a></li>
-                                             </ul>
+                                             </ul>-->
                                         </div>
                                    </div>
                          </div>
@@ -152,7 +158,7 @@
           </div>
      </section>
 
-
+     {% if posts %}
      <!-- MENU-->
      <section id="menu" data-stellar-background-ratio="0.5">
           <div class="container">
@@ -278,6 +284,7 @@
                </div>
           </div>
      </section>
+     {% endif %}
 
 
      <!-- TESTIMONIAL -->
@@ -336,23 +343,23 @@
             3. Click "Share" and choose "Embed map" tab
             4. Copy only URL and paste it within the src="" field below
 	-->
-                    <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
+                   <!-- <div class="wow fadeInUp col-md-6 col-sm-12" data-wow-delay="0.4s">
                          <div id="google-map">
                               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" allowfullscreen></iframe>
                          </div>
-                    </div>    
+                    </div> -->   
 
                     <div class="col-md-6 col-sm-12">
 
                          <div class="col-md-12 col-sm-12">
                               <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                                   <h2>Contact Us</h2>
+                                   <h2>Contáctanos</h2>
                               </div>
                          </div>
 
                          <!-- CONTACT FORM -->
-                         <form action="#" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
-
+                         <form action="{% url 'land:index' %}" method="post" class="wow fadeInUp" id="contact-form" role="form" data-wow-delay="0.8s">
+                              {% csrf_token %}
                               <!-- IF MAIL SENT SUCCESSFUL  // connect this with custom JS -->
                               <h6 class="text-success">Your message has been sent successfully.</h6>
                               
@@ -360,19 +367,19 @@
                               <h6 class="text-danger">E-mail must be valid and message must be longer than 1 character.</h6>
 
                               <div class="col-md-6 col-sm-6">
-                                   <input type="text" class="form-control" id="cf-name" name="name" placeholder="Full name">
+                                   <input type="text" class="form-control" id="cf-name" name="name" placeholder="Nombre completo">
                               </div>
 
                               <div class="col-md-6 col-sm-6">
-                                   <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email address">
+                                   <input type="email" class="form-control" id="cf-email" name="email" placeholder="Email">
                               </div>
 
                               <div class="col-md-12 col-sm-12">
-                                   <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Subject">
+                                   <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Asunto">
 
-                                   <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Tell about your project"></textarea>
+                                   <textarea class="form-control" rows="6" id="cf-message" name="message" placeholder="Escribe tu consulta"></textarea>
 
-                                   <button type="submit" class="form-control" id="cf-submit" name="submit">Send Message</button>
+                                   <button type="submit" class="form-control" id="cf-submit" name="submit">Enviar Mensajes</button>
                               </div>
                          </form>
                     </div>
