@@ -7,3 +7,9 @@ def index(request):
 	return render(request, "blog/listBlog.html", {
 		'posts' : posts
 		})
+
+def article(request, identificador):
+	post = Post.objects.get(pk=identificador)
+	return render(request, "blog/article.html", {
+		'p' : post
+		})	

@@ -23,7 +23,7 @@
       {% if posts %}
         {% for p in posts %}
         <div class="post-preview">
-          <a href="post.html">
+          <a href="{% url 'blog:article' identificador=p.id %}">
             <h2 class="post-title">
               {{p.title}}
             </h2>

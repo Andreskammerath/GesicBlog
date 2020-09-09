@@ -1,0 +1,35 @@
+{% extends "blog/layout.html"%}
+{% block head %} <title>Gesic Blog</title> {% endblock%} 
+{% block body%}
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('/static/img/home-bg2.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{p.title}}</h1>
+            <h2 class="subheading">{{p.intro}}</h2>
+            <span class="meta">Posted by
+              <a href="#">{{p.author}}</a>
+              on {{p.created_date}} </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>{{p.body}}</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+{% endblock%}
+
