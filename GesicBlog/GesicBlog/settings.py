@@ -154,14 +154,14 @@ STATIC_URL = '/static/'
 
 
 
-
+"""
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_HOST_USER = os.environ.get('HOST_KEY') # this is exactly the value 'apikey'
 EMAIL_HOST_PASSWORD = os.environ.get('HOST_PASS')
 
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-
+"""
 # Extra places for collectstatic to find static files.
 #STATICFILES_DIRS = (
 #    os.path.join(BASE_DIR, 'static'),

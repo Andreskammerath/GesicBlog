@@ -19,6 +19,11 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+
+
+    <!--Floating WhatsApp css-->
+    <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+
     
     <!-- FontAwesome JS
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>-->
@@ -38,7 +43,7 @@
      <!-- MENU -->
      <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
           <div class="container">
-
+               
                <div class="navbar-header">
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                          <span class="icon icon-bar"></span>
@@ -68,6 +73,7 @@
 
           </div>
      </section>
+     <div id="WAButton"></div>
 	{% block body%}{% endblock %}
          <!-- FOOTER -->
      <footer id="footer" data-stellar-background-ratio="0.5">
@@ -142,7 +148,11 @@
     <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'js/smoothscroll.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/floating-wpp.min.js' %}"></script>
 
+    <!--Floating WhatsApp javascript-->
+    <script type="text/javascript" src="{% static 'js/wppbutton.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'css/floating-wpp.min.css' %}">
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) 
     <script src="assets/js/demo/style-switcher.js"></script> -->
 
