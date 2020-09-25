@@ -9,3 +9,5 @@ GesicBlog/GesicBlog/local_settings.py
 GesicBlog/GesicBlog/settings.py
 GesicBlog/GesicBlog/wsgi.py
 GesicBlog/db.sqlite3
+venv
+.idea
