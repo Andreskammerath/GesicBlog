@@ -24,7 +24,7 @@
     <!--Floating WhatsApp css-->
     <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
 
-    
+
     <!-- FontAwesome JS
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>-->
 
@@ -35,7 +35,7 @@
           <div class="spinner">
 
                <span class="spinner-rotate"></span>
-               
+
           </div>
      </section>
 
@@ -43,7 +43,7 @@
      <!-- MENU -->
      <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
           <div class="container">
-               
+
                <div class="navbar-header">
                     <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                          <span class="icon icon-bar"></span>
@@ -57,12 +57,10 @@
 
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
+                    <ul class="nav navbar-nav navbar-nav-first" style="margin-left: 10em">
                          <li><a href="#home" class="smoothScroll">Inicio</a></li>
                          <li><a href="#about" class="smoothScroll">Sobre nosotros</a></li>
-                         <!--<li><a href="#team" class="smoothScroll">Blog</a></li>-->
                          <li><a href="{% url 'blog:list' %}" class="smoothScroll">Blog</a></li>
-                         <li><a href="#contact" class="smoothScroll">Contacto</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -73,7 +71,7 @@
 
           </div>
      </section>
-     <div id="WAButton"></div>
+     <div id="WAButton" style="z-index: 1050"></div>
 	{% block body%}{% endblock %}
          <!-- FOOTER -->
      <footer id="footer" data-stellar-background-ratio="0.5">
@@ -129,13 +127,11 @@
                               <!--<li><a href="#" class="fa fa-google"></a></li>-->
                          </ul>
 
-                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
-                              <p><br>Copyright &copy; 2020 <br>GESiC 
-                              
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
+                              <p><br>Copyright &copy; 2020 <br>GESiC
                               <br><br>Design: <a rel="nofollow" href="http://templatemo.com" target="_parent">TemplateMo</a></p>
                          </div>
                     </div>
-                    
                </div>
           </div>
      </footer>
@@ -153,7 +149,7 @@
     <!--Floating WhatsApp javascript-->
     <script type="text/javascript" src="{% static 'js/wppbutton.js'%}"></script>
     <link rel="stylesheet" href="{% static 'css/floating-wpp.min.css' %}">
-    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) 
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE)
     <script src="assets/js/demo/style-switcher.js"></script> -->
 
 </body>
